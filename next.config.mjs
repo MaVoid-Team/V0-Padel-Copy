@@ -7,8 +7,12 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    loader: 'custom',
+    loaderFile: './image-loader.js'
   },
+  output: 'export',
+  basePath: "/V0-Padel-Copy",
+  assetPrefix: "/V0-Padel-Copy/",
 }
 
 export default nextConfig
